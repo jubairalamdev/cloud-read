@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       data-theme="light"
       className={`${geistSans.variable} light ${geistMono.variable}`}
     >
-      <body className="bg-background text-foreground">
+      <body className="bg-background text-foreground pt-24">
         <Navbar />
           {children}
         <Footer />
