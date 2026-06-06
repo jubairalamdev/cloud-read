@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Echo",
+    "author": "Elena Fisher",
+    "description": "A gripping mystery novel set in a foggy coastal town where secrets lurk beneath the surface.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://placehold.co/200x300?text=The+Silent+Echo"
+  },
+  {
+    "id": 2,
+    "title": "Mastering Algorithms",
+    "author": "David Code",
+    "description": "A comprehensive guide to understanding and implementing fundamental algorithms in modern programming.",
+    "category": "Tech",
+    "available_quantity": 12,
+    "image_url": "https://placehold.co/200x300?text=Mastering+Algorithms"
+  },
+  {
+    "id": 3,
+    "title": "The Quantum Future",
+    "author": "Dr. Sarah Smith",
+    "description": "An accessible exploration of quantum mechanics and its potential to revolutionize technology.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "https://placehold.co/200x300?text=The+Quantum+Future"
+  },
+  {
+    "id": 4,
+    "title": "Dragons of the North",
+    "author": "J.R. Myth",
+    "description": "An epic fantasy saga following a young hero's journey to tame the last dragon.",
+    "category": "Story",
+    "available_quantity": 3,
+    "image_url": "https://placehold.co/200x300?text=Dragons+of+the+North"
+  },
+  {
+    "id": 5,
+    "title": "AI for Everyone",
+    "author": "Alan Turing II",
+    "description": "Understanding the basics of Artificial Intelligence and how it impacts our daily lives.",
+    "category": "Tech",
+    "available_quantity": 15,
+    "image_url": "https://placehold.co/200x300?text=AI+for+Everyone"
+  },
+  {
+    "id": 6,
+    "title": "Cosmic Horizons",
+    "author": "Neil Star",
+    "description": "A stunning visual journey through the universe, from the Big Bang to black holes.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://placehold.co/200x300?text=Cosmic+Horizons"
+  },
+  {
+    "id": 7,
+    "title": "The Lost Garden",
+    "author": "Katherine Green",
+    "description": "A heartwarming story about rediscovering family roots in an abandoned countryside estate.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://placehold.co/200x300?text=The+Lost+Garden"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Essentials",
+    "author": "Mike Shield",
+    "description": "A practical handbook for protecting personal data and corporate networks from cyber threats.",
+    "category": "Tech",
+    "available_quantity": 20,
+    "image_url": "https://placehold.co/200x300?text=Cybersecurity+Essentials"
+  },
+  {
+    "id": 9,
+    "title": "Botany for Beginners",
+    "author": "Dr. Flora Plant",
+    "description": "An introduction to plant biology, covering photosynthesis, reproduction, and ecology.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://placehold.co/200x300?text=Botany+for+Beginners"
+  },
+  {
+    "id": 10,
+    "title": "Shadows of Rome",
+    "author": "Marcus Historius",
+    "description": "A historical fiction thriller set during the height of the Roman Empire.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://placehold.co/200x300?text=Shadows+of+Rome"
+  },
+  {
+    "id": 11,
+    "title": "Cloud Architecture",
+    "author": "Jeff Bezos (Not that one)",
+    "description": "Designing scalable and resilient systems using modern cloud computing patterns.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "https://placehold.co/200x300?text=Cloud+Architecture"
+  },
+  {
+    "id": 12,
+    "title": "The Brain Explained",
+    "author": "Dr. Amy Neuron",
+    "description": "Unraveling the complexities of the human brain and how it controls our behavior.",
+    "category": "Science",
+    "available_quantity": 11,
+    "image_url": "https://placehold.co/200x300?text=The+Brain+Explained"
+  }
+]
