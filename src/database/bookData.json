@@ -6,7 +6,7 @@
     "description": "A gripping mystery novel set in a foggy coastal town where secrets lurk beneath the surface.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://placehold.co/200x300?text=The+Silent+Echo"
+    "image_url": "https://cdn.thestorygraph.com/lyllhmbqv73koojzx0pvxhinnv85"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "A comprehensive guide to understanding and implementing fundamental algorithms in modern programming.",
     "category": "Tech",
     "available_quantity": 12,
-    "image_url": "https://placehold.co/200x300?text=Mastering+Algorithms"
+    "image_url": "https://m.media-amazon.com/images/I/91B3z1tOvdL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "An accessible exploration of quantum mechanics and its potential to revolutionize technology.",
     "category": "Science",
     "available_quantity": 8,
-    "image_url": "https://placehold.co/200x300?text=The+Quantum+Future"
+    "image_url": "https://m.media-amazon.com/images/I/71B96Fq-OBL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "An epic fantasy saga following a young hero's journey to tame the last dragon.",
     "category": "Story",
     "available_quantity": 3,
-    "image_url": "https://placehold.co/200x300?text=Dragons+of+the+North"
+    "image_url": "https://betweenthecovers.cdn.bibliopolis.com/pictures/573727.jpg?auto=webp&v=1705694732"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Understanding the basics of Artificial Intelligence and how it impacts our daily lives.",
     "category": "Tech",
     "available_quantity": 15,
-    "image_url": "https://placehold.co/200x300?text=AI+for+Everyone"
+    "image_url": "https://m.media-amazon.com/images/I/81l5qdjz7xL._UF1000,1000_QL80_.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "A stunning visual journey through the universe, from the Big Bang to black holes.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://placehold.co/200x300?text=Cosmic+Horizons"
+    "image_url": "https://m.media-amazon.com/images/I/71Y-faALDkL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "id": 7,
@@ -60,51 +60,15 @@
     "description": "A heartwarming story about rediscovering family roots in an abandoned countryside estate.",
     "category": "Story",
     "available_quantity": 10,
-    "image_url": "https://placehold.co/200x300?text=The+Lost+Garden"
+    "image_url": "https://ik.imagekit.io/panmac/tr:di-placeholder_portrait_aMjPtD9YZ.jpg,tr:w-350,f-jpg,pr-true/edition/9781447210825.jpg"
   },
   {
     "id": 8,
-    "title": "Cybersecurity Essentials",
-    "author": "Mike Shield",
-    "description": "A practical handbook for protecting personal data and corporate networks from cyber threats.",
-    "category": "Tech",
-    "available_quantity": 20,
-    "image_url": "https://placehold.co/200x300?text=Cybersecurity+Essentials"
-  },
-  {
-    "id": 9,
-    "title": "Botany for Beginners",
-    "author": "Dr. Flora Plant",
-    "description": "An introduction to plant biology, covering photosynthesis, reproduction, and ecology.",
-    "category": "Science",
-    "available_quantity": 6,
-    "image_url": "https://placehold.co/200x300?text=Botany+for+Beginners"
-  },
-  {
-    "id": 10,
-    "title": "Shadows of Rome",
-    "author": "Marcus Historius",
-    "description": "A historical fiction thriller set during the height of the Roman Empire.",
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "description": "Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived.",
     "category": "Story",
-    "available_quantity": 4,
-    "image_url": "https://placehold.co/200x300?text=Shadows+of+Rome"
-  },
-  {
-    "id": 11,
-    "title": "Cloud Architecture",
-    "author": "Jeff Bezos (Not that one)",
-    "description": "Designing scalable and resilient systems using modern cloud computing patterns.",
-    "category": "Tech",
-    "available_quantity": 9,
-    "image_url": "https://placehold.co/200x300?text=Cloud+Architecture"
-  },
-  {
-    "id": 12,
-    "title": "The Brain Explained",
-    "author": "Dr. Amy Neuron",
-    "description": "Unraveling the complexities of the human brain and how it controls our behavior.",
-    "category": "Science",
-    "available_quantity": 11,
-    "image_url": "https://placehold.co/200x300?text=The+Brain+Explained"
+    "available_quantity": 6,
+    "image_url": "https://m.media-amazon.com/images/I/71ls-I6A5KL._AC_UF1000,1000_QL80_.jpg"
   }
 ]

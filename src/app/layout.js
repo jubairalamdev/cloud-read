@@ -1,16 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lora, Inter } from 'next/font/google';
 import "./globals.css";
-import Navbar from "./Components/Shared/Navbar";
-import Footer from "./Components/Shared/Footer";
+import Navbar from "@/Components/Shared/Navbar";
+import Footer from "@/Components/Shared/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+export const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans', // Defines a CSS custom property
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const lora = Lora({
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata = {
@@ -23,9 +24,9 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme="light"
-      className={`${geistSans.variable} light ${geistMono.variable}`}
+      className={`light ${lora.variable} ${inter.variable}`}
     >
-      <body className="bg-background text-foreground pt-24">
+      <body className="bg-background text-foreground">
         <Navbar />
           {children}
         <Footer />

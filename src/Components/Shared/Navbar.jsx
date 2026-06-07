@@ -1,13 +1,15 @@
 "use client"; // Required for useState
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/logo.png"
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4">
-      <nav className="relative flex flex-col w-full max-w-[1200px] bg-background/70 backdrop-blur-md border border-default-200 shadow-lg rounded-xl transition-all duration-300 overflow-hidden">
+      <nav className="relative flex flex-col w-full max-w-[1200px] bg-background/50 backdrop-blur-md border border-default-100 shadow-lg rounded-xl transition-all duration-300 overflow-hidden">
         
         {/* Top Bar: Logo, Links (Desktop), Login, Hamburger */}
         <div className="flex items-center justify-between h-16 px-6">
@@ -15,7 +17,11 @@ const NavbarComponent = () => {
           {/* Left: Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold text-foreground tracking-tight">
-              Cloud Read
+              <Image
+                src={logo}
+                alt="logo"
+                height={60}
+              />
             </Link>
           </div>
 
@@ -35,7 +41,7 @@ const NavbarComponent = () => {
           {/* Right: Login Button & Hamburger Icon */}
           <div className="flex items-center gap-4">
             <Link href="/login">
-              <button className="bg-primary text-primary-foreground hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all shadow-md">
+              <button className="bg-primary text-primary-foreground hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all bg-[#1a535c] text-white">
                 Login
               </button>
             </Link>
