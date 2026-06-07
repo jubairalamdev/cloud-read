@@ -1,11 +1,9 @@
-import React from 'react';
+import { redirect } from 'next/navigation';
 
-const booksPage = () => {
-    return (
-        <div>
-            This is All Books page
-        </div>
-    );
+const defaultCategoryId = 1;
+
+const BooksPage = () => {
+    redirect(`/books/category/${defaultCategoryId}`)
 };
 
-export default booksPage;
+export default BooksPage;

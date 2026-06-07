@@ -5,6 +5,7 @@
     "author": "Elena Fisher",
     "description": "A gripping mystery novel set in a foggy coastal town where secrets lurk beneath the surface.",
     "category": "Story",
+    "categoryId": 2,
     "available_quantity": 5,
     "image_url": "https://cdn.thestorygraph.com/lyllhmbqv73koojzx0pvxhinnv85"
   },
@@ -14,6 +15,7 @@
     "author": "David Code",
     "description": "A comprehensive guide to understanding and implementing fundamental algorithms in modern programming.",
     "category": "Tech",
+    "categoryId": 4,
     "available_quantity": 12,
     "image_url": "https://m.media-amazon.com/images/I/91B3z1tOvdL._AC_UF1000,1000_QL80_.jpg"
   },
@@ -23,6 +25,7 @@
     "author": "Dr. Sarah Smith",
     "description": "An accessible exploration of quantum mechanics and its potential to revolutionize technology.",
     "category": "Science",
+    "categoryId": 3,
     "available_quantity": 8,
     "image_url": "https://m.media-amazon.com/images/I/71B96Fq-OBL._AC_UF1000,1000_QL80_.jpg"
   },
@@ -32,6 +35,7 @@
     "author": "J.R. Myth",
     "description": "An epic fantasy saga following a young hero's journey to tame the last dragon.",
     "category": "Story",
+    "categoryId": 2,
     "available_quantity": 3,
     "image_url": "https://betweenthecovers.cdn.bibliopolis.com/pictures/573727.jpg?auto=webp&v=1705694732"
   },
@@ -41,6 +45,7 @@
     "author": "Alan Turing II",
     "description": "Understanding the basics of Artificial Intelligence and how it impacts our daily lives.",
     "category": "Tech",
+    "categoryId": 4,
     "available_quantity": 15,
     "image_url": "https://m.media-amazon.com/images/I/81l5qdjz7xL._UF1000,1000_QL80_.jpg"
   },
@@ -50,6 +55,7 @@
     "author": "Neil Star",
     "description": "A stunning visual journey through the universe, from the Big Bang to black holes.",
     "category": "Science",
+    "categoryId": 3,
     "available_quantity": 7,
     "image_url": "https://m.media-amazon.com/images/I/71Y-faALDkL._AC_UF1000,1000_QL80_.jpg"
   },
@@ -59,6 +65,7 @@
     "author": "Katherine Green",
     "description": "A heartwarming story about rediscovering family roots in an abandoned countryside estate.",
     "category": "Story",
+    "categoryId": 2,
     "available_quantity": 10,
     "image_url": "https://ik.imagekit.io/panmac/tr:di-placeholder_portrait_aMjPtD9YZ.jpg,tr:w-350,f-jpg,pr-true/edition/9781447210825.jpg"
   },
@@ -68,6 +75,7 @@
     "author": "Matt Haig",
     "description": "Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived.",
     "category": "Story",
+    "categoryId": 2,
     "available_quantity": 6,
     "image_url": "https://m.media-amazon.com/images/I/71ls-I6A5KL._AC_UF1000,1000_QL80_.jpg"
   }
