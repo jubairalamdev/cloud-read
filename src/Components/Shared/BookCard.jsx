@@ -17,7 +17,7 @@ const BookCard = ({ book }) => {
             {book.category}
           </span>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a535c]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#1a535c]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       <div className="p-5 text-center relative z-10">
         <h3 className="text-xl font-bold text-[#1a535c] mb-1 truncate" title={book.title}>

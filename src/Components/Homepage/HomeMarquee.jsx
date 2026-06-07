@@ -2,7 +2,6 @@ import React from 'react';
 import Marquee from "react-fast-marquee";
 
 const HomeMarquee = () => {
-    // Hardcoded array of new arrival book titles
     const newBooks = [
         "The Silent Echo",
         "Project Hail Mary",
