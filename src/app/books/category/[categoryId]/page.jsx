@@ -28,7 +28,7 @@ export default async function AllBooksPage({ params }) {
           </p>
         </div>
         <SearchBar />
-        <div className="grid grid-cols-12 gap-6">
+        <div className="flex flex-col grid-cols-12 gap-6 sm:grid">
           <LeftSideBar categories={categories} activeId={categoryId} />
           {/* Books Grid */}
           <div className="grid grid-cols-1 col-span-9 sm:grid-cols-2 lg:grid-cols-3 gap-8">
