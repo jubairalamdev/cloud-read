@@ -1,26 +1,12 @@
 "use client"
 
+import { registerUser } from '@/lib/authentication/registerUser';
 // import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
 
 const RegisterPage = () => {
-
-    // Server Action logic provided
-    const registerUser = async (formData) => {
-        const regData = Object.fromEntries(formData.entries());
-        alert(`user logged in: ${regData.name}`)
-        // console.log(data);
-        // const { data, error } = await authClient.signUp.email({
-        //     name: regData.name, 
-        //     email: regData.email, 
-        //     password: regData.password, 
-        //     image: regData.photoUrl,
-        //     callbackURL: "/",
-        // });
-        // console.log(data, error)
-    }
 
     const [showPassword, setShowPassword] = useState(false);
 
