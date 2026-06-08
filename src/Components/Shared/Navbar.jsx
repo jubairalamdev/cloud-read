@@ -30,7 +30,7 @@ const NavbarComponent = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4">
-      <nav className="relative flex flex-col w-full max-w-300 bg-background/50 backdrop-blur-md border border-default-100 shadow-lg rounded-xl transition-all duration-300 overflow-hidden">
+      <nav className="relative flex flex-col w-full max-w-300 bg-background/50 backdrop-blur-md border border-gray-100 shadow-lg rounded-xl transition-all duration-300 overflow-hidden">
 
         <div className="flex items-center justify-between h-16 px-6">
           <div className="shrink-0">
