@@ -23,3 +23,8 @@ export const getBooksBySearchQuery = (query) => {
     book.title.toLowerCase().includes(cleanQuery)
   );
 };
+
+export const getBookById = (bookId)=> {
+  const book = bookData.find((b) => b.id === parseInt(bookId));
+  return book || null;
+};
