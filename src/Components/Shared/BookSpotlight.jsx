@@ -37,7 +37,7 @@ const BookSpotlight = () => {
             {`Nora's`} life has been going from bad to worse. Then at the stroke of midnight on her last day on earth she finds herself transported to a library.
           </p>
           <div className="pt-4">
-            <Link href="/book/13">
+            <Link href="/book/8">
               <button className="bg-[#ff6b6b] hover:bg-[#e05e5e] text-white font-bold py-3.5 px-10 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                 VIEW DETAILS
               </button>
