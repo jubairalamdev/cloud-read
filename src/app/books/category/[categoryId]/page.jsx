@@ -6,13 +6,10 @@ import SearchBar from "@/Components/Books/SearchBar";
 export default async function AllBooksPage({ params }) {
 
   const { categoryId } = await params;
-  // console.log(categoryId)
 
   const categories = await getCategories()
-  // console.log(categories)
 
   const booksData = await getBooksByCategoryId(categoryId);
-  console.log(booksData)
 
   return (
     <div className="bg-[#f7fff7] min-h-screen pb-20 pt-36 px-4 sm:px-6">

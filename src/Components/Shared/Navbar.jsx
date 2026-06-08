@@ -53,12 +53,15 @@ const NavbarComponent = () => {
               </div>
 
               : user ? (
-                <button
-                  className="bg-[#1a535c] text-white hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all"
-                  onClick={logoutUser}
-                >
-                  Logout
-                </button>
+                <>
+                  <p className="font-bold hidden md:block">Welcome, {user.name}</p>
+                  <button
+                    className="bg-[#1a535c] text-white hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all hidden md:block"
+                    onClick={logoutUser}
+                  >
+                    Logout
+                  </button>
+                </>
               ) : (
                 <Link href="/login">
                   <button className="bg-[#1a535c] text-white hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all">
@@ -112,11 +115,20 @@ const NavbarComponent = () => {
             >
               My Profile
             </Link>
-            <Link href="/login">
-              <button className="bg-primary text-primary-foreground hover:opacity-90 px-5 py-2 text-sm font-medium transition-all bg-[#1a535c] text-white">
-                Login
-              </button>
-            </Link>
+            {user ? (
+                  <button
+                    className="bg-[#1a535c] text-white hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all w-fit"
+                    onClick={logoutUser}
+                  >
+                    Logout
+                  </button>
+              ) : (
+                <Link href="/login">
+                  <button className="bg-[#1a535c] text-white hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all">
+                    Login
+                  </button>
+                </Link>
+              )}
           </div>
         )}
       </nav>

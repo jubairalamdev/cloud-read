@@ -3,7 +3,6 @@
 import { googleSignIn } from '@/lib/authentication/googleLogin';
 import { loginUser } from '@/lib/authentication/loginUser';
 import { Button } from '@heroui/react';
-// import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa6';

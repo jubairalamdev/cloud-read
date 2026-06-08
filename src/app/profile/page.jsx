@@ -6,19 +6,16 @@ import { redirect } from 'next/navigation';
 
 const ProfilePage = async () => {
   
-  // Fetch session data
   const session = await auth.api.getSession({
     headers: await headers(),
   });
 
-  // If not logged in, redirect to login
   if (!session || !session.user) {
     redirect('/login');
   }
 
   const userData = session.user;
 
-  // Format the date (e.g., "June 8, 2026")
   const joinDate = userData.createdAt 
     ? new Date(userData.createdAt).toLocaleDateString("en-US", { 
         year: 'numeric', 
@@ -123,7 +120,7 @@ const ProfilePage = async () => {
                     className="w-full flex justify-center bg-[#1a535c] hover:bg-[#e05e5e] text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
                     href="/profile/update-profile"
                 >
-                    Edit Profile
+                    Update Profile
                 </Link>
               </div>
 

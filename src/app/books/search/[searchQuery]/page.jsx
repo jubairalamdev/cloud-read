@@ -4,10 +4,8 @@ import SearchBar from "@/Components/Books/SearchBar";
 import { getBooksBySearchQuery, getCategories } from "@/lib/books/actions";
 
 export default async function SearchResultsPage({ params }) {
-  console.log(params)
   const { searchQuery } = await params;
   const decodedQuery = decodeURIComponent(searchQuery);
-  console.log(searchQuery, decodedQuery)
   const booksData = await getBooksBySearchQuery(decodedQuery);
 
   const categories = await getCategories()

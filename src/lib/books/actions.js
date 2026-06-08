@@ -11,7 +11,6 @@ export const getBooksByCategoryId = (cat_id) => {
   }
   else {
     const filteredData = bookData.filter(book => book.categoryId == cat_id);
-    console.log(filteredData)
     return filteredData;
   }
 };

@@ -3,7 +3,6 @@ import { toast } from "react-toastify";
 
 export const updateSession = async (formData) => {
     const action = "Profile Update"
-    console.log(formData)
 
     try {
         const user = Object.fromEntries(formData.entries());

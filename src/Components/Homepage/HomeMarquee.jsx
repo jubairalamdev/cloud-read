@@ -3,20 +3,12 @@ import Marquee from "react-fast-marquee";
 
 const HomeMarquee = () => {
     const newBooks = [
-        "The Silent Echo",
+        "New Arrivals:",
         "Project Hail Mary",
         "Dune",
         "The Midnight Library",
         "Atomic Habits",
-        "Educated",
-        "Becoming",
-        "Sapiens",
-        "The Great Gatsby",
-        "1984",
-        "To Kill a Mockingbird",
-        "The Alchemist",
-        "Thinking, Fast and Slow",
-        "The Psychology of Money"
+        "Special Discount on Memberships",
     ];
 
     return (
