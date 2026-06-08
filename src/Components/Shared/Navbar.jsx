@@ -4,22 +4,28 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logo.png"
+import { authClient } from "@/lib/auth-client";
+import { logoutUser } from "@/lib/authentication/logoutUser";
 
 const NavbarComponent = () => {
+
+  const { data: session, isPending } = authClient.useSession()
+  const user = session?.user;
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const links = 
-  <>
-    <Link href="/" className="text-default-500 hover:text-foreground text-sm font-medium transition-colors">
-      Home
-    </Link>
-    <Link href="/books" className="text-default-500 hover:text-foreground text-sm font-medium transition-colors">
-      All Books
-    </Link>
-    <Link href="/profile" className="text-default-500 hover:text-foreground text-sm font-medium transition-colors">
-      My Profile
-    </Link>
-  </>
+  const links =
+    <>
+      <Link href="/" className="text-default-500 hover:text-foreground text-sm font-medium transition-colors">
+        Home
+      </Link>
+      <Link href="/books" className="text-default-500 hover:text-foreground text-sm font-medium transition-colors">
+        All Books
+      </Link>
+      <Link href="/profile" className="text-default-500 hover:text-foreground text-sm font-medium transition-colors">
+        My Profile
+      </Link>
+    </>
 
 
   return (
@@ -40,11 +46,26 @@ const NavbarComponent = () => {
             {links}
           </div>
           <div className="flex items-center gap-4">
-            <Link href="/login">
-              <button className="bg-primary text-primary-foreground hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all bg-[#1a535c] text-white">
-                Login
-              </button>
-            </Link>
+            {isPending
+              ? <div>
+                <span className="skeleton skeleton-text">Authenticating...</span>
+                <span className="loading loading-infinity loading-lg"></span>
+              </div>
+
+              : user ? (
+                <button
+                  className="bg-[#1a535c] text-white hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all"
+                  onClick={logoutUser}
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link href="/login">
+                  <button className="bg-[#1a535c] text-white hover:opacity-90 px-5 py-2 rounded-full text-sm font-medium transition-all">
+                    Login
+                  </button>
+                </Link>
+              )}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-foreground focus:outline-none"
@@ -57,13 +78,13 @@ const NavbarComponent = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 {
-                isMenuOpen 
-                ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) 
-                : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
+                  isMenuOpen
+                    ? (
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    )
+                    : (
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    )}
               </svg>
             </button>
           </div>
@@ -90,6 +111,11 @@ const NavbarComponent = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               My Profile
+            </Link>
+            <Link href="/login">
+              <button className="bg-primary text-primary-foreground hover:opacity-90 px-5 py-2 text-sm font-medium transition-all bg-[#1a535c] text-white">
+                Login
+              </button>
             </Link>
           </div>
         )}
