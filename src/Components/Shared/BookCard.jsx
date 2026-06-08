@@ -27,7 +27,7 @@ const BookCard = ({ book }) => {
           by {book.author}
         </p>
         <Link href={`/book/${book.id}`}>
-          <button className="w-full bg-[#ff6b6b] hover:bg-[#e05e5e] text-white font-bold py-2.5 rounded-xl transition-colors shadow-md hover:shadow-lg">
+          <button className="w-full bg-[#ff6b6b] hover:bg-[#e05e5e] text-white font-bold py-2.5 rounded-xl transition-colors shadow-md hover:shadow-lg cursor-pointer">
             View Details
           </button>
         </Link>
