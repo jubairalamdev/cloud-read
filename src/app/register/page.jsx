@@ -1,10 +1,11 @@
 "use client"
 
+import { googleSignIn } from '@/lib/authentication/googleLogin';
 import { registerUser } from '@/lib/authentication/registerUser';
-// import { authClient } from '@/lib/auth-client';
+import { Button } from '@heroui/react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaEye, FaEyeSlash } from 'react-icons/fa6';
+import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa6';
 
 const RegisterPage = () => {
 
@@ -76,7 +77,7 @@ const RegisterPage = () => {
                         className="w-full bg-[#f7fff7]/50 border border-[#1a535c]/20 rounded-xl px-4 py-3 pr-12 text-[#1a535c] focus:outline-none focus:ring-2 focus:ring-[#4ecdc4] focus:bg-white transition-all placeholder-[#1a535c]/40"
                     />
                 </div>
-                
+
                 {/* Show Password */}
                 <span
                     className='text-gray-600 flex gap-1 items-center mb-3 -mt-3 hover:underline w-fit cursor-pointer'
@@ -105,6 +106,15 @@ const RegisterPage = () => {
                 >
                     Register
                 </button>
+
+                <Button
+                    className="w-full"
+                    variant="tertiary"
+                    onClick={googleSignIn}
+                >
+                    <FaGoogle />
+                    Sign in with Google
+                </Button>
 
                 {/* Footer Link */}
                 <div className="text-center pt-2">

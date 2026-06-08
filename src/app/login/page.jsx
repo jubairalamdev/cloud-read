@@ -1,10 +1,12 @@
 "use client"
 
+import { googleSignIn } from '@/lib/authentication/googleLogin';
 import { loginUser } from '@/lib/authentication/loginUser';
+import { Button } from '@heroui/react';
 // import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaEye, FaEyeSlash } from 'react-icons/fa6';
+import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa6';
 
 const LoginPage = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -49,7 +51,7 @@ const LoginPage = () => {
                         className="w-full bg-[#f7fff7]/50 border border-[#1a535c]/20 rounded-xl px-4 py-3 pr-12 text-[#1a535c] focus:outline-none focus:ring-2 focus:ring-[#4ecdc4] focus:bg-white transition-all placeholder-[#1a535c]/40"
                     />
                 </div>
-                
+
                 {/* Show Password */}
                 <span
                     className='text-gray-600 flex gap-1 items-center mb-3 -mt-3 hover:underline w-fit cursor-pointer'
@@ -71,13 +73,22 @@ const LoginPage = () => {
                     </label>
                 </div>
 
-                {/* Register Button */}
+                {/* Login Register Button */}
                 <button
                     className="w-full bg-[#1a535c] hover:bg-[#e05e5e] text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
                     type='submit'
                 >
                     Login
                 </button>
+
+                <Button 
+                    className="w-full" 
+                    variant="tertiary"
+                    onClick={googleSignIn}    
+                >
+                    <FaGoogle />
+                    Sign in with Google
+                </Button>
 
                 {/* Footer Link */}
                 <div className="text-center pt-2">
