@@ -2,10 +2,11 @@ import { Lora, Inter } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/Components/Shared/Navbar";
 import Footer from "@/Components/Shared/Footer";
+import { Bounce, ToastContainer } from 'react-toastify';
 
 export const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-sans', // Defines a CSS custom property
+  variable: '--font-sans',
   display: 'swap',
 });
 
@@ -28,7 +29,20 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-background text-foreground">
         <Navbar />
-          {children}
+        {children}
+        <ToastContainer
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          transition={Bounce}
+        />
         <Footer />
       </body>
     </html>
